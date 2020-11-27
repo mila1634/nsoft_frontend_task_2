@@ -1,0 +1,55 @@
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.dashed {
+    width: 160px;
+    height: 160px;
+    border: 2px dashed;
+    border-bottom-color: #005281;
+    border-right-color: #005281;
+    border-top-color: #b1e2ff;
+    border-left-color: #b1e2ff;
+    border-radius: 50%;
+    position: relative;
+    background: transparent;
+}
+
+.clockwise {
+  animation: spin 10s linear infinite;
+}
+.reverse {
+  animation: spinreverse 10s linear infinite;
+}
+
+
+@keyframes spin { 
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes spinreverse { 
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+button {
+  background-color: #00629b;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: none;
+  font-size: 22px;
+  font-family: 'Goldman', sans-serif;
+  color: #80b8d8;
+  outline: none;
+}
